@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Book Club </title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+<br>
+<br>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="new-start-date"> START DATE </label>
+                    <input type="date" class="form-control" id="new-start-date">
+                </div>
+            </div> 
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="new-end-date">END DATE</label>
+                    <input type="date" class="form-control" id="new-end-date">
+                </div>
+            </div>    
+        </div>
+        <div class="row">
+            <div class="column-md">
+                <div class="form-group">
+                    <label for="new-task">Book Title</label>
+                    <input type="text" class="form-control" id="new-task" placeholder="List">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="new-task">Location</label>
+                    <input type="text" class="form-control" id="new-location" placeholder="location">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button id="add" class="btn btn-primary from-control">Add</button>
+        </div>
+     </div>
+ </div>
+<br>
+ <table id="list" class="table table-borderless">
+     <tr>
+        <th>Book Title</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Location</th>
+        <th>actions</th>
+       </tr> 
+ </table>
+
+    <script src="DOM.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/boostrap.bundle.js"></script>
+</body>
+</html>
